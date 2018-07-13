@@ -32,11 +32,11 @@ def test(num_words): #function to generate a dataset of random strings for testi
     assert extract(query) == database	
 
 def main():
-    """Runs your solution -- no need to update (except to maybe change the database)."""
+    # Runs the solution 
     # Simple implementation of the autocomplete API
     database = ["abracadara", "al", "alice", "alicia", "allen", "alter", "altercation", "bob", "eve", "evening", "event", "eventually", "mallory"]
     query = lambda prefix: [d for d in database if d.startswith(prefix)][:5]
     assert extract(query) == database
 	
 main()
-test(20) #tests generality of solution on 20 randomly generated strings 
+test(25) #tests generality of solution on 25 randomly generated strings 
